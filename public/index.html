@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postform with Fable..</title>
+
+    <style>
+      :root {
+        --content-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="span-12">POSTFORM..</h1>
+    </header>
+
+    <main>
+      <fieldset>
+        <legend>shop</legend>
+
+        <form method="post" action="http://localhost:8080/f/811bb6c8">
+          <input type="hidden" name="productId" value="1234" />
+          <input type="number" name="amount" inputmode="numeric" pattern="[0-9]*" />
+          <input type="submit" value="Add product 1234" />
+        </form>
+
+        <form method="post" action="http://localhost:8080/f/811bb6c8">
+          <input type="hidden" name="productId" value="5678" />
+          <input type="hidden" name="amount" value="1" />
+          <input type="submit" value="Add product 5678" />
+        </form>
+      </fieldset>
+
+      <fieldset>
+        <legend>checkout</legend>
+
+        <form method="post" action="http://localhost:8080/f/8ce381ec">
+          <input type="submit" value="checkout" />
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>
